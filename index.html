@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Sign-Up Modal | Nabil ASHAIB</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <!------ Home Page ------>
+        <header id="header-el">
+            <h2>New here? Create your account Now!</h2>
+            <img src="./welcome-img.svg">
+            <button id="open-modal">SIGN UP</button>
+        </header>
+
+        <!------ Modal Overlay ------>
+        <div id="overlay">
+            <!------ Modal Pop-Up ------>
+            <div id="modal">
+                <div id="go-back">
+                    <img src="./x.png" id="go-back-img">
+                </div>
+                <h2>CREATE ACCOUNT</h2>
+                <p>Sign up with your Email</p>
+                <!------ Inputs ------>
+                <div class="inputs">
+                    <i class="fa fa-user-o icon">
+                  </i>
+                    <input class="input-field" type="text" placeholder="Name" required id="name-input">
+                </div>
+                <div class="inputs">
+                    <i class="fa fa-envelope-o icon">
+                  </i>
+                    <input class="input-field" type="email" placeholder="Email" required id="email-input">
+                </div>
+                <div class="inputs">
+                    <i class="fa fa-lock icon">
+                  </i>
+                    <input class="input-field" type="password" placeholder="Password" required id="pwd-input">
+                </div>
+                <div id="remember-me">
+                    <input type="checkbox" checked id="remember-input"> Remember me
+                </div>
+                <!---- SUBMIT ---->
+                <button type="submit" id="close-modal">SIGN UP</button>
+                <!---- ERROR MSG ---->
+                <div id="error-el">
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.pack.js"></script>
+    </body>
+</html>
